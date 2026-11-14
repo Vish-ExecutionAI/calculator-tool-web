@@ -8,6 +8,6 @@ export default [
       parserOptions: { ecmaFeatures: { jsx: true } },
       globals: { console: "readonly", process: "readonly", crypto: "readonly", fetch: "readonly", document: "readonly", window: "readonly" }
     },
-    rules: { "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^React$", "caughtErrorsIgnorePattern": "^error$" }] }
+    rules: { "no-unused-vars": ["error", { "argsIgnorePattern": "^", "varsIgnorePattern": "^React$", "caughtErrorsIgnorePattern": "^error$" }] }
   }
 ];

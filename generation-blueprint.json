@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "product": {
+    "name": "Calculator Tool",
+    "summary": "Calculator Tool"
+  },
+  "frontend": {
+    "framework": "React and Vite",
+    "pages": [
+      "Dashboard",
+      "Users"
+    ],
+    "apiOperations": [
+      "listUsers",
+      "createUser"
+    ]
+  },
+  "application": {
+    "backendRequired": false
+  },
+  "backend": {
+    "runtime": "Node.js and Express",
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/api/users"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users"
+      }
+    ],
+    "resources": [
+      {
+        "singular": "user",
+        "plural": "users"
+      }
+    ]
+  },
+  "database": {
+    "engine": "PostgreSQL",
+    "resources": [
+      "users"
+    ]
+  },
+  "environments": [
+    "Development",
+    "Test",
+    "Production"
+  ],
+  "source": {
+    "discussion": "Simple Calculator with basic arithmetic functions",
+    "plan": "Develop a web-based calculator tool supporting basic arithmetic operations (addition, subtraction, multiplication, division) using a frontend-only architecture, ensuring a clean user interface and robust functionality before deployment.",
+    "sketchName": null
+  }
+}
